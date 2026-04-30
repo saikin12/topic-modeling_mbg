@@ -1,0 +1,16 @@
+model,topic_id,top_words,n_documents,percentage
+LDA,0,omon | betul | masya_allah | ya | wowo | curhat | om | rame | ajaa | maju_terus | maju_terus bapak | uangkan_saja | p_prabowo | betul itu | semangattt,450,3.3151613378517757
+LDA,1,periode | korupsi | boss | tdk_paham | faham | itumah | ganti_duit | love_you | woi | bapakku | ganti_duit saja | ae | guru | program korupsi | dijadikan,29,0.21364373066155884
+LDA,2,bapak | alhamdulillah | bapak_prabowo | sehat_selalu | bapak_presiden | lanjutkan | semoga | semangat | makan bergizi | bergizi gratis | bergizi | gratis | mantap | makan | sehat,1579,11.63253278326212
+LDA,3,enak_loh | oh | itu enak_loh | aamiinn | bae | ini juga | juta_lapangan_kerja | masing_masing | persiapan | wkwkwk | gnti | wajah | bali | team | itu,17,0.12523942831884485
+LDA,4,ah | ganti_uang | kocak | mengejek | tag | dosa | burger | yang mengejek | uwang | pakkkk | di ganti_uang | percuma | kesempatan | sedih_sangat | bukannya,18,0.13260645351407102
+LDA,5,makan | gratis | bergizi | yang | bergizi gratis | makan bergizi | saya | di | tidak | bapak | nya | saja | anak | itu | ada,11151,82.149697951967
+LDA,6,sehat_selalu_bapak_prabowo | minn | benar | mambu | opo | tenaga_kerja | iki | benar sangat | tiktok | menyerap | kata | omong | saya_bisa_nabung | gratis saya_bisa_nabung | undang,48,0.35361720937085606
+LDA,7,mokel | lanjutkan bapak | lanjutkan | tidak_paham | bapak | jokowi | ituu | semangat ya | yang mokel | geratis | saya tidak_paham | presiden_terbaik | punya_dapur | maksudnya | yang punya_dapur,105,0.7735376454987476
+LDA,8,sticker | wo | siap | lah | subianto | pada_mokel | saja belum_dapet | cape | ajang_korupsi | terima kasih_ya | kasih_ya | sak | sampai_perguruan_tinggi | salam_dari | sehat_selalu_panjang_umur,63,0.46412258729924855
+LDA,9,ih | gajih | naikin | to | manusia_mana | manusia_mana yang | lho | gaji_guru | malu | tidak tergerak | guru_honor | bln | tergerak | pelajar | dengan menu,4,0.029468100780904668
+LDA,10,akuu | hbis | pret | masyallah | nakes | supaya tau | pa_persiden | saya kurang | ndk | jugaa | gaa | abiss | jadii | bangett | engga,12,0.08840430234271401
+LDA,11,kakak | lahh | atuh | saya_usahain | is | ha | abisin makan | ya kakak | yang tau | tetapi saya_usahain | tidak abisin | kepala_badan gizi | kepala_badan | sangu | wa,21,0.15470752909974952
+LDA,12,min | keren | kelas | mokell | itu mah | di kelas | mas | kelas saya | nya ya | oke | sipil | pelatihan_bulan | aparatur | sipil negara | aparatur sipil,38,0.2799469574185944
+LDA,13,omon_omon | ladang | korup | halah | salah_gunakan | di salah_gunakan | lihat dilapangan | sesungguhnya | celah | jangn | koropsi | menciptakan_lapangan_kerja | doang | mulu | program bp,25,0.1841756298806542
+LDA,14,mie_ayam | ketua | mending_pendidikan_gratis | video | trimakasih_bapak_prabowo | we | shat | acak | cabe | pelatihan | mataku | fasilitas | pokoknya | berkualitas | dapur dapur,14,0.10313835273316635

@@ -30,16 +30,24 @@
 - [x] Ekstraksi trigram berdasarkan output bigram
 - [x] Visualisasi top bigram dan trigram
 - [x] WordCloud hasil normalisasi
-- [x] Simpan hasil ke `output/normalisasi_slang.csv`
+- [x] Simpan hasil ke `data/normalisasi_slang.csv`
 
-## Fase 4: Topic Modeling
-- [ ] Implementasi LDA (Latent Dirichlet Allocation)
-- [ ] Implementasi NMF (Non-negative Matrix Factorization)
+## Fase 4: Representasi Teks (LDA & BERTopic) ✅
+- [x] LDA (Latent Dirichlet Allocation) berbasis TF-IDF
+- [x] Evaluasi LDA (Coherence Score, Perplexity)
+- [x] Pencarian jumlah topik optimal
+- [x] BERTopic berbasis Sentence Embedding
+- [x] Perbandingan LDA vs BERTopic
+- [x] Visualisasi topik (bar chart, pie chart, wordcloud)
+- [x] Simpan hasil ke `data/representasi.csv`
+
+## Fase 5: Topic Modeling (Mendatang)
+- [ ] Implementasi LDA/NMF dengan hasil representasi
 - [ ] Tunning hyperparameter (jumlah topik optimal)
 - [ ] Evaluasi model (Coherence Score, perplexity)
 - [ ] Interpretasi setiap topik
 
-## Fase 5: Visualisasi Hasil Modeling
+## Fase 6: Visualisasi Hasil Modeling
 - [ ] WordCloud per topik
 - [ ] Distribusi topik dalam corpus
 - [ ] Topic evolution over time
@@ -47,13 +55,13 @@
 - [ ] Network visualization kata-kata terkait
 - [ ] Heatmap korelasi antar topik
 
-## Fase 6: Analisis Tambahan (Opsional)
+## Fase 7: Analisis Tambahan (Opsional)
 - [ ] Sentiment Analysis (positif/negatif/netral)
 - [ ] Entity Recognition (orang, organisasi, dll)
 - [ ] Hashtag analysis
 - [ ] User engagement analysis
 
-## Fase 7: Dokumentasi & Pelaporan
+## Fase 8: Dokumentasi & Pelaporan
 - [ ] Update README dengan hasil analisis
 - [ ] Buat presentation slides
 - [ ] Ringkasan temuan utama
@@ -68,6 +76,7 @@
 | `eda_cleaning.ipynb` | ✅ Selesai | EDA dan data cleaning |
 | `preprocessing_data.ipynb` | ✅ Selesai | Stopword removal & stemming |
 | `normalisasi_slang.ipynb` | ✅ Selesai | Normalisasi slang, bigram & trigram |
+| `representasi_teks.ipynb` | ✅ Selesai | Representasi teks (LDA + BERTopic) |
 | `todolis.md` | ✅ Updated | Task list tracking |
 | `README.md` | 🔄 Updated | Dokumentasi proyek |
 | `requirements.txt` | 🔄 Updated | Dependencies |
@@ -78,7 +87,9 @@
 |------|-----------|
 | `data/data_cleaned.csv` | Data setelah cleaning |
 | `data/data_preprocessed.csv` | Data setelah preprocessing |
-| `output/normalisasi_slang.csv` | Data setelah normalisasi slang & n-gram |
+| `data/normalisasi_slang.csv` | Data setelah normalisasi slang & n-gram |
+| `data/representasi.csv` | Representasi teks (LDA + BERTopic) per dokumen |
+| `data/topic_summary.csv` | Summary semua topik dari LDA dan BERTopic |
 | `data/bow_countvectorizer.csv` | Matriks BoW untuk LDA |
 | `data/tfidf_vectorizer.csv` | Matriks TF-IDF untuk NMF |
 
@@ -102,9 +113,17 @@
 | `output/top_trigrams.png` | Top 20 trigram terbentuk |
 | `output/token_count_comparison.png` | Perbandingan jumlah token per tahap |
 | `output/wordcloud_normalisasi.png` | WordCloud hasil normalisasi slang |
+| `output/lda_optimal_topics.png` | Pencarian topik optimal LDA |
+| `output/lda_topic_distribution.png` | Distribusi topik LDA |
+| `output/bertopic_visualize_topics.html` | Visualisasi interaktif BERTopic |
+| `output/bertopic_barchart.html` | Bar chart BERTopic |
+| `output/bertopic_hierarchy.html` | Hierarchical topics BERTopic |
+| `output/bertopic_topic_distribution.png` | Distribusi topik BERTopic |
+| `output/lda_vs_bertopic_comparison.png` | Perbandingan LDA vs BERTopic |
+| `output/wordcloud_per_topic.png` | WordCloud per topik |
 
 ## Progress
 - Dataset: hasil_processing.csv (17,658 komentar)
 - Tanggal: April 2026
-- Fase saat ini: Normalisasi Slang & Ekstraksi N-Gram ✅ Selesai
-- Selanjutnya: Topic Modeling (LDA/NMF)
+- Fase saat ini: Representasi Teks (LDA & BERTopic) ✅ Selesai
+- Selanjutnya: Topic Modeling dengan representasi teks
