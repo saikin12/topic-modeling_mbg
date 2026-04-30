@@ -1,0 +1,10 @@
+1. Tentukan tujuan
+2. Ambil data TikTok
+3. Cleaning
+4. Preprocessing
+5. TF-IDF
+6. (Opsional) Sentimen
+7. Topic Modeling (LDA / BERTopic)
+8. Evaluasi
+9. Visualisasi
+10. Kesimpulan
