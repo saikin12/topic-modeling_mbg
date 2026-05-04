@@ -61,7 +61,8 @@ Analisis MBG/
 ├── preprocessing_data.ipynb        # Notebook Preprocessing
 ├── normalisasi_slang.ipynb         # Notebook Normalisasi Slang & N-Gram
 ├── representasi_teks.ipynb         # Notebook Representasi Teks (LDA + BERTopic)
-├── topic_modeling.ipynb            # Notebook Topic Modeling (future)
+├── modeling_data.ipynb             # Notebook Topic Modeling (LDA multi-k + BERTopic)
+├── visualisasi_data.ipynb          # Notebook Visualisasi (pyLDAvis + Cluster)
 ├── requirements.txt
 ├── README.md
 └── todolis.md
@@ -104,15 +105,23 @@ Analisis MBG/
 - [x] Visualisasi interaktif BERTopic (HTML)
 - [x] Output: `data/representasi.csv`, `data/topic_summary.csv`
 
-### Fase 5: Topic Modeling 🔄 (Next Step)
-- [ ] LDA/NMF dengan hasil representasi
-- [ ] Evaluasi & tuning model
-- [ ] Interpretasi topik
+### Fase 5: Topic Modeling ✅
+- [x] Sampling 50% dataset untuk efisiensi
+- [x] LDA dengan uji beberapa jumlah topik (k=5,8,10,12,15,20)
+- [x] Evaluasi LDA (Coherence Score, Perplexity, Log-Likelihood)
+- [x] Visualisasi perbandingan k
+- [x] Topik optimal LDA dengan distribusi & interpretasi
+- [x] BERTopic clustering berbasis sentence embedding
+- [x] Visualisasi BERTopic interaktif (HTML)
+- [x] Perbandingan LDA vs BERTopic
+- [x] Output: `data/modeling_results_sampled.csv`
 
-### Fase 6: Visualisasi
-- [ ] WordCloud per topik
-- [ ] Distribusi topik
-- [ ] Interactive visualization (pyLDAvis)
+### Fase 6: Visualisasi ✅
+- [x] LDA → pyLDAvis interaktif (HTML)
+- [x] LDA top words per topik (bar chart)
+- [x] LDA distribusi & proporsi topik
+- [x] BERTopic → Topic cluster 2D/3D (UMAP)
+- [x] BERTopic visualize topics, hierarchy, heatmap
 
 ## 🔧 Dependencies
 
@@ -155,7 +164,10 @@ pip install -r requirements.txt
     # Jalankan semua cell
     jupyter notebook representasi_teks.ipynb
     # Jalankan semua cell
-    # (future) jupyter notebook topic_modeling.ipynb
+    jupyter notebook modeling_data.ipynb
+    # Jalankan semua cell
+    jupyter notebook visualisasi_data.ipynb
+    # Jalankan semua cell
     ```
 
 ## 📈 Hasil Yang Diharapkan
@@ -178,7 +190,13 @@ pip install -r requirements.txt
    - LDA (Latent Dirichlet Allocation) → TF-IDF based
    - BERTopic → Sentence Embedding (paraphrase-multilingual-MiniLM)
 
-3. **Evaluasi**:
+3. **Topic Modeling**:
+   - LDA dengan uji multiple k (5, 8, 10, 12, 15, 20)
+   - Evaluasi: Coherence Score, Perplexity, Log-Likelihood
+   - BERTopic clustering dengan auto-reduce topics
+   - Sampling 50% untuk efisiensi komputasi
+
+4. **Evaluasi**:
    - Coherence Score (Cv)
    - Perplexity
    - Visualisasi interaktif (BERTopic HTML, pyLDAvis)
@@ -194,6 +212,7 @@ pip install -r requirements.txt
 | `data/topic_summary.csv` | Summary semua topik dari LDA dan BERTopic |
 | `data/bow_countvectorizer.csv` | Matriks Bag-of-Words |
 | `data/tfidf_vectorizer.csv` | Matriks TF-IDF |
+| `data/modeling_results_sampled.csv` | Hasil topic modeling (50% sampling) |
 
 ## 👥 Kontributor
 

@@ -1,0 +1,8 @@
+Metrik,LDA,BERTopic
+Coherence Score (C_v),0.5098,0.4133
+Perplexity,799.22,N/A
+Topic Diversity,0.9000,0.7667
+Silhouette Score,N/A,-0.0510
+Jumlah Topik,8,24
+Outlier (%),0.0%,34.6%
+Jumlah Dokumen,6787,6787

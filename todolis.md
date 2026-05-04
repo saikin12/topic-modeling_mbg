@@ -41,19 +41,26 @@
 - [x] Visualisasi topik (bar chart, pie chart, wordcloud)
 - [x] Simpan hasil ke `data/representasi.csv`
 
-## Fase 5: Topic Modeling (Mendatang)
-- [ ] Implementasi LDA/NMF dengan hasil representasi
-- [ ] Tunning hyperparameter (jumlah topik optimal)
-- [ ] Evaluasi model (Coherence Score, perplexity)
-- [ ] Interpretasi setiap topik
+## Fase 5: Topic Modeling ✅
+- [x] Load data representasi & sampling 50%
+- [x] LDA dengan uji beberapa jumlah topik (k=5,8,10,12,15,20)
+- [x] Evaluasi LDA (Coherence Score, Perplexity, Log-Likelihood)
+- [x] Pencarian jumlah topik optimal LDA
+- [x] Visualisasi distribusi topik LDA
+- [x] BERTopic clustering berbasis embedding
+- [x] Visualisasi BERTopic (barchart, topics, hierarchy, distribution)
+- [x] Perbandingan LDA vs BERTopic
+- [x] Interpretasi topik
+- [x] Simpan hasil ke `data/modeling_results_sampled.csv`
 
-## Fase 6: Visualisasi Hasil Modeling
-- [ ] WordCloud per topik
-- [ ] Distribusi topik dalam corpus
-- [ ] Topic evolution over time
-- [ ] Interactive visualization (pyLDAvis)
-- [ ] Network visualization kata-kata terkait
-- [ ] Heatmap korelasi antar topik
+## Fase 6: Visualisasi Hasil Modeling ✅
+- [x] LDA → pyLDAvis interaktif (HTML)
+- [x] LDA top words per topik (bar chart)
+- [x] LDA distribusi & proporsi topik (bar + pie chart)
+- [x] BERTopic → Topic cluster 2D (UMAP static + interaktif)
+- [x] BERTopic → Topic cluster 3D (UMAP interaktif)
+- [x] BERTopic visualize topics, hierarchy, heatmap, barchart
+- [x] BERTopic distribusi topik & outlier pie chart
 
 ## Fase 7: Analisis Tambahan (Opsional)
 - [ ] Sentiment Analysis (positif/negatif/netral)
@@ -77,6 +84,8 @@
 | `preprocessing_data.ipynb` | ✅ Selesai | Stopword removal & stemming |
 | `normalisasi_slang.ipynb` | ✅ Selesai | Normalisasi slang, bigram & trigram |
 | `representasi_teks.ipynb` | ✅ Selesai | Representasi teks (LDA + BERTopic) |
+| `modeling_data.ipynb` | ✅ Selesai | Topic modeling (LDA multi-k + BERTopic) |
+| `visualisasi_data.ipynb` | ✅ Selesai | Visualisasi (pyLDAvis + BERTopic cluster) |
 | `todolis.md` | ✅ Updated | Task list tracking |
 | `README.md` | 🔄 Updated | Dokumentasi proyek |
 | `requirements.txt` | 🔄 Updated | Dependencies |
@@ -92,6 +101,7 @@
 | `data/topic_summary.csv` | Summary semua topik dari LDA dan BERTopic |
 | `data/bow_countvectorizer.csv` | Matriks BoW untuk LDA |
 | `data/tfidf_vectorizer.csv` | Matriks TF-IDF untuk NMF |
+| `data/modeling_results_sampled.csv` | Hasil topic modeling (50% sampling) |
 
 ## Visualisasi yang Dihasilkan
 
@@ -121,9 +131,26 @@
 | `output/bertopic_topic_distribution.png` | Distribusi topik BERTopic |
 | `output/lda_vs_bertopic_comparison.png` | Perbandingan LDA vs BERTopic |
 | `output/wordcloud_per_topic.png` | WordCloud per topik |
+| `output/model_evaluation_comparison.png` | Perbandingan evaluasi model |
+| `output/lda_topic_interpretation.csv` | Interpretasi manual topik LDA |
+| `output/bertopic_topic_interpretation.csv` | Interpretasi manual topik BERTopic |
+| `output/evaluation_summary.csv` | Ringkasan evaluasi model |
+| `output/pyLDAvis_interactive.html` | pyLDAvis interaktif LDA |
+| `output/lda_pyldavis_top_words.png` | Top words LDA per topik |
+| `output/lda_topic_distribution_pie.png` | Distribusi topik LDA (bar) |
+| `output/lda_topic_proportion_pie.png` | Proporsi topik LDA (pie) |
+| `output/bertopic_cluster_2d.png` | BERTopic cluster 2D (static) |
+| `output/bertopic_cluster_2d_interactive.html` | BERTopic cluster 2D interaktif |
+| `output/bertopic_cluster_3d_interactive.html` | BERTopic cluster 3D interaktif |
+| `output/bertopic_cluster_visualize.html` | Visualize topics BERTopic |
+| `output/bertopic_cluster_hierarchy.html` | Hierarchical BERTopic |
+| `output/bertopic_cluster_heatmap.html` | Heatmap BERTopic |
+| `output/bertopic_cluster_barchart.html` | Bar chart BERTopic |
+| `output/bertopic_cluster_distribution.png` | Distribusi topik BERTopic |
+| `output/bertopic_outlier_pie.png` | Pie outlier BERTopic |
 
 ## Progress
 - Dataset: hasil_processing.csv (17,658 komentar)
-- Tanggal: April 2026
-- Fase saat ini: Representasi Teks (LDA & BERTopic) ✅ Selesai
-- Selanjutnya: Topic Modeling dengan representasi teks
+- Tanggal: Mei 2026
+- Fase saat ini: Visualisasi (pyLDAvis + BERTopic Cluster) ✅ Selesai
+- Selanjutnya: Analisis tambahan (opsional) atau pelaporan
